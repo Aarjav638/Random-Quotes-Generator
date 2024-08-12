@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
       </p>
       <div className="w-[25%]">
         <ul className="flex items-center justify-center gap-x-4 text-white">
-          <li><a href="./App.tsx" referrerPolicy="no-referrer" >Home</a></li>
+          <li><a href="#" referrerPolicy="no-referrer" >Home</a></li>
           <li><a href="#" referrerPolicy='no-referrer'>About</a></li>
           <li><a href="#" referrerPolicy='no-referrer'>Contact</a></li>
         </ul>

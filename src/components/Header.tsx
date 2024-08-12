@@ -11,7 +11,7 @@ const Header: React.FC = () => {
         <img src="/menu.png" alt="logo" className='flex md:hidden w-6 h-6 md:w-16 md:h-16' onClick={() => { setIsOpen(!isOpen) }} />
         <div className='w-[25%] hidden md:flex'>
           <ul className='flex-row flex gap-x-6 '>
-            <li><a href="./App.tsx" referrerPolicy="no-referrer" >Home</a></li>
+            <li><a href="#" referrerPolicy="no-referrer" >Home</a></li>
             <li><a href="#" referrerPolicy='no-referrer'>About</a></li>
             <li><a href="#" referrerPolicy='no-referrer'>Contact</a></li>
           </ul>
