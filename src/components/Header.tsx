@@ -6,7 +6,7 @@ const Header: React.FC = () => {
   return (
     <>
       <header className='flex justify-between flex-row bg-teal-500 min-w-full text-white py-4 px-4 md:px-8 items-center'>
-        <a href='./App.tsx'> <h1 className='text-xl md:text-2xl font-semibold mr-6 md:ml-6 text-center'>Random Quotes Generator</h1></a>
+        <a href='#'> <h1 className='text-xl md:text-2xl font-semibold mr-6 md:ml-6 text-center'>Random Quotes Generator</h1></a>
 
         <img src="/menu.png" alt="logo" className='flex md:hidden w-6 h-6 md:w-16 md:h-16' onClick={() => { setIsOpen(!isOpen) }} />
         <div className='w-[25%] hidden md:flex'>
@@ -21,7 +21,7 @@ const Header: React.FC = () => {
       </header>
       {isOpen && <div className="w-full bg-teal-500">
         <ul className='flex flex-col px-4 text-white gap-y-2 items-center '>
-          <a href='./App.tsx'>Home</a>
+          <a href='#'>Home</a>
           <a href='#'>About</a>
           <a href='#'>Contact</a>
         </ul>
