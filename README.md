@@ -1,50 +1,67 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Random Quotes Generator
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+Get inspired with My Random Quotes Generator. Click a button to receive a new motivational quote every time!
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+# Get Started With Random Quotes Generator
 
-- Configure the top-level `parserOptions` property like this:
+## Step 1. Cloning Git Repository
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+Perform
+
+```bash
+git clone https://github.com/Aarjav638/Random-Quotes-Generator.git
+
+```
+## Step 2. Move to Random Quotes Generator Directory
+
+```bash
+cd Random-Quotes-Generator
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Step 3. Install Necessary Dependencies
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+```bash
+using Npm 
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+npm Install
+
 ```
+```bash
+using yarn
+
+yarn
+```
+## Step 4. Run the project
+
+```bash
+using npm 
+
+npm run dev
+
+```
+```bash
+using yarn
+
+yarn dev
+```
+
+
+## 🔗 Links
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/Aarjav638/Random-Quotes-Generator)
+
+
+![Logo](https://i.ibb.co/WyFw7RL/Logo.png)
+
+
+## Demo
+
+https://random-quotes-generator-coral.vercel.app/
+
+
+## Screenshots
+
+![App Screenshot](https://i.ibb.co/rstSd4h/Screenshot-2024-08-12-163619.png)
+![App Screenshot](https://i.ibb.co/PrSRmrj/Screenshot-2024-08-12-163748.png)
