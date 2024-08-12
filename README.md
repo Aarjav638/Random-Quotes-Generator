@@ -62,6 +62,5 @@ https://random-quotes-generator-coral.vercel.app/
 
 
 ## Screenshots
-
 ![App Screenshot](https://i.ibb.co/rstSd4h/Screenshot-2024-08-12-163619.png)
-![App Screenshot](https://i.ibb.co/PrSRmrj/Screenshot-2024-08-12-163748.png)
+![App Screenshot](https://i.ibb.co/ZzTxFnS/Screenshot-2024-08-12-183141.png)
