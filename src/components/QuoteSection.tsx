@@ -18,7 +18,23 @@ export const QuoteSection: React.FC = () => {
     setIsOpen(false);
   }
 
+  const validiateNum = (num: number) => {
+    if (num < 1) {
+      alert("Number should be greater than 0");
+      return false;
+    }
+    if (num > 10) {
+      alert("Number should be less than 10");
+      return false;
+    }
+    return true;
+  }
+
   const getQuote = async () => {
+    if (!validiateNum(num)) {
+      return;
+    }
+
     try {
       setLoading(true);
 
