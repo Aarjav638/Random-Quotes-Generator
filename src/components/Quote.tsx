@@ -1,6 +1,6 @@
 import React from 'react'
 import useFetch from '../hooks/useFetch';
-const Quote = () => {
+const Quote: React.FC = () => {
     const [quoteData, loading] = useFetch(`https://dummyjson.com/quotes/random/1`);
     if (loading) {
         return <div>Loading...</div>;
