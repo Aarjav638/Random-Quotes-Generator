@@ -86,6 +86,8 @@ const SignUpModal: React.FC<ModalProps> = ({ isOpen, handleClose }) => {
                         className="p-2 border border-gray-300 rounded-md"
                         required={true}
                         ref={phoneRef}
+                        minLength={10}
+                        maxLength={10}
                         onKeyDown={(e) => handleKeyDown(e, submitRef)}
                     />
                     <button className="bg-teal-500 text-white p-2 rounded-md" type='submit' ref={submitRef} >{loading ? "loading..." : "Sign In"}</button>
