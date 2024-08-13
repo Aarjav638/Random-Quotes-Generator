@@ -23,28 +23,31 @@ cd Random-Quotes-Generator
 
 ## Step 3. Install Necessary Dependencies
 
-```bash
-using Npm 
+## using Npm 
 
+```bash
 npm Install
-
 ```
-```bash
-using yarn
 
+## using yarn
+
+```bash
 yarn
 ```
+
 ## Step 4. Run the project
 
+## using npm 
+
 ```bash
-using npm 
 
 npm run dev
 
 ```
-```bash
-using yarn
 
+## using yarn
+
+```bash
 yarn dev
 ```
 
