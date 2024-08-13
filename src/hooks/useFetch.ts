@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import  Quote  from '../constants/types';
+import  {Quote}  from '../constants/types';
 
 const useFetch = (url: string): [Quote[] | null, boolean] => {
     const [data, setData] = useState<Quote[] | null>(null);
