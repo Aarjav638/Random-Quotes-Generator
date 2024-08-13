@@ -91,7 +91,7 @@ JWT_SECRET = CKBAJKSDBVJndjkvKJSDncJKjncbsahjebs
 
 - replace username and password with your username and password respectively
 
-## Step 5. Run the project
+## Step 6. Run the project
 
 ## using npm
 
