@@ -1,5 +1,5 @@
 import AuthContext from './authContext';
-// import axios from 'axios';
+import axios from 'axios';
 import React, { useState, useEffect, ReactNode } from 'react';
 import { AuthContextType } from '../../constants/types';
 const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
@@ -12,13 +12,13 @@ const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   useEffect(() => {
     const loadUserData = async () => {
       try {
-        //     const token = await AsyncStorage.getItem('token');
-        //     // console.log('token', token);
-        //     const user = await AsyncStorage.getItem('user');
-        // console.log('user', user);
-        // if (token && user) {
-        //   setState({...state, token: token, user: JSON.parse(user)});
-        // }
+        const token = await localStorage.getItem('token');
+        // console.log('token', token);
+        const user = await localStorage.getItem('user');
+        console.log('user', user);
+        if (token && user) {
+          setState({ ...state, token: token, user: JSON.parse(user) });
+        }
         console.log('user', state);
       } catch (error) {
         console.log(error);
@@ -28,9 +28,9 @@ const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   }, []);
 
   //default axios settings
-  // axios.defaults.headers.common['Authorization'] = `Bearer ${state?.token}`;
-  // axios.defaults.baseURL =
-  // 'http://ec2-35-154-88-77.ap-south-1.compute.amazonaws.com:4000/api/v1';
+  axios.defaults.headers.common['Authorization'] = `Bearer ${state?.token}`;
+  axios.defaults.baseURL =
+    'http://localhost:7000/api/v1/';
 
   return (
     <AuthContext.Provider value={[state, setState]}>

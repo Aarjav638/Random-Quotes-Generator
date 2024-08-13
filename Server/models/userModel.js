@@ -21,8 +21,6 @@ const userSchema = new moongoose.Schema(
     phone_number: {
       type: Number,
       required: [true, "Please enter your phone number"],
-      min: 10,
-      max: 10,
     },
 
     role: {
