@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import Modal from './Modal';
-import Quote from '../constants/types';
+import Modal from './QuoteModal';
+import { Quote } from '../constants/types';
+import QuoteModal from './QuoteModal';
 
 export const QuoteSection: React.FC = () => {
 
@@ -66,7 +67,7 @@ export const QuoteSection: React.FC = () => {
         placeholder="Enter the number of quotes"
       />
 
-      <Modal isOpen={isOpen} quoteData={quoteData} handleClose={handleClose} />
+      <QuoteModal isOpen={isOpen} quoteData={quoteData} handleClose={handleClose} />
       <button className="bg-teal-500 text-black py-2 px-4 rounded" onClick={getQuote}>
         {loading ? "Loading..." : "Get Quote"}
       </button>
