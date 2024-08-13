@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Modal from './QuoteModal';
 import { Quote } from '../constants/types';
 import QuoteModal from './QuoteModal';
 

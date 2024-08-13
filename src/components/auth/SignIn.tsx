@@ -1,9 +1,10 @@
-import React, { useState, useContext } from "react";
-import AuthContext from "../../context/auth/authContext";
+import React from "react";
+// import AuthContext from "../../context/auth/authContext";
 
-const SignIn = () => {
+const SignIn: React.FC = () => {
     return (
-        <div>SignIn</div>
+        <div
+            className="flex flex-col h-[100vh] justify-center items-center">SignIn</div>
     )
 }
 

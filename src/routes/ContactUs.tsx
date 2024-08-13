@@ -13,7 +13,7 @@ type formValues = {
 const ContactUs = () => {
     const nameRef = useRef<HTMLInputElement>(null)
     const emailRef = useRef<HTMLInputElement>(null)
-    const messageRef = useRef<HTMLInputElement>(null)
+    const messageRef = useRef<HTMLTextAreaElement>(null)
     const phoneRef = useRef<HTMLInputElement>(null)
     const submitRef = useRef<HTMLButtonElement>(null)
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -27,8 +27,9 @@ const ContactUs = () => {
         }
         console.log(form)
     }
+    console.log(messageRef)
     const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>, nextRef: React.RefObject<HTMLInputElement>
-        | React.RefObject<HTMLButtonElement>
+        | React.RefObject<HTMLButtonElement> | React.RefObject<HTMLTextAreaElement>
     ) => {
         if (e.key === 'Enter') {
             e.preventDefault();
@@ -81,6 +82,8 @@ const ContactUs = () => {
                             <label htmlFor="message" className='text-white'>Message:</label>
                             <textarea
                                 className='p-2 w-full sm:w-2/3 min-h-48 border border-gray-300 rounded-md'
+                                required={true}
+                                ref={messageRef}
                             />
                         </div>
                         <button className="bg-teal-500 text-white p-2 rounded-md" type='submit' ref={submitRef} >Sign In</button>
