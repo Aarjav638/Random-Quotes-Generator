@@ -12,5 +12,14 @@ const contactUsSchema = z.object({
 
 type formValues = z.infer<typeof contactUsSchema>;
 
-export { contactUsSchema };
-export type { formValues };
+
+
+const postQuoteSchema = z.object({
+    author_name: z.string().min(1, { message: "Name is required" }).max(50),
+    quote: z.string().min(1, { message: "Quote is required" }),
+});
+
+type postQuoteValues = z.infer<typeof postQuoteSchema>;
+
+export { contactUsSchema,postQuoteSchema };
+export type { formValues, postQuoteValues };

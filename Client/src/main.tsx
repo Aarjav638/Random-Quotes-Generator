@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import ErrorPage from './error-page.tsx';
 import ContactUs from './routes/ContactUs.tsx';
 import About from './routes/About.tsx';
+import CreateQuote from './routes/CreateQuote.tsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -19,6 +20,14 @@ const router = createBrowserRouter([
   {
     path: "/about",
     element: <About />
+  },
+  {
+    path: "/create-quote/:id",
+    element: <CreateQuote />,
+  },
+  {
+    path: "/create-quote",
+    element: <CreateQuote />,
   }
 
 ]);
