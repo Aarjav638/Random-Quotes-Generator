@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 const Footer: React.FC = () => {
   return (
     <footer className="w-full bg-teal-500 p-8 flex flex-col sm:flex-row justify-between items-center">
@@ -8,9 +8,9 @@ const Footer: React.FC = () => {
       </p>
       <div className="w-[25%]">
         <ul className="flex items-center justify-center gap-x-4 text-white">
-          <li><a href="#" referrerPolicy="no-referrer" >Home</a></li>
-          <li><a href="#" referrerPolicy='no-referrer'>About</a></li>
-          <li><a href="#" referrerPolicy='no-referrer'>Contact</a></li>
+          <li><Link to="/" referrerPolicy="no-referrer" >Home</Link></li>
+          <li><Link to="/about" referrerPolicy='no-referrer'>About</Link></li>
+          <li><Link to="/contact" referrerPolicy='no-referrer'>Contact</Link></li>
         </ul>
       </div>
     </footer>
