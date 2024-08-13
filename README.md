@@ -26,7 +26,7 @@ cd Random-Quotes-Generator
 ## using Npm 
 
 ```bash
-npm Install
+npm install
 ```
 
 ## using yarn
