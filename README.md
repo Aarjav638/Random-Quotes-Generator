@@ -79,6 +79,18 @@ npm install
 yarn
 ```
 
+## step 5. Put the .env file inside Server Directory
+
+- example .env
+
+```bash
+PORT = 7000
+MONGO_URI = mongodb+srv://<username>:<password>@cluster0.guc1y.mongodb.net/
+JWT_SECRET = CKBAJKSDBVJndjkvKJSDncJKjncbsahjebs
+```
+
+- replace username and password with your username and password respectively
+
 ## Step 5. Run the project
 
 ## using npm
